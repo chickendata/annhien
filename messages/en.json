@@ -1,0 +1,138 @@
+{
+  "Header": {
+    "menu": "Menu",
+    "search": "Search",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "nav": {
+      "home": "Home",
+      "bulk": "Bulk Hair",
+      "tape": "Tape Hair",
+      "wigs": "Wigs Hair",
+      "weft": "Weft Hair",
+      "closure": "Closure & Frontal",
+      "collections": "Collections",
+      "about": "About"
+    }
+  },
+  "Footer": {
+    "tagline": "Wholesale hair extensions and hairpieces for stylists and retailers worldwide.",
+    "shop": "Shop",
+    "help": "Help",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Subscribe for new arrivals and insider deals.",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "links": {
+      "bulk": "Bulk Hair",
+      "tape": "Tape Hair",
+      "wigs": "Wigs Hair",
+      "weft": "Weft Hair",
+      "all": "All Collections",
+      "about": "About Us",
+      "contact": "Contact",
+      "faqs": "FAQs",
+      "blog": "Blog"
+    }
+  },
+  "Home": {
+    "Hero": {
+      "discover": "Discover More",
+      "slide1Title": "Open Doors To A World Of Fashion",
+      "slide1Subtitle": "New Season 2026",
+      "slide2Title": "Bulk Hair. Wholesale Price.",
+      "slide2Subtitle": "Stylist Favorites",
+      "slide3Title": "Wigs That Define You",
+      "slide3Subtitle": "Full Lace Collection"
+    },
+    "Collections": {
+      "eyebrow": "Our Catalog",
+      "title": "Shop By Collection"
+    },
+    "NewArrivals": {
+      "eyebrow": "Just In",
+      "title": "New Arrivals"
+    },
+    "Stylist": {
+      "eyebrow": "For Professionals",
+      "title": "Welcome Stylists!",
+      "description": "Create an account to receive preferred benefits, wholesale pricing, and early access to new arrivals.",
+      "name": "Name",
+      "whatsapp": "WhatsApp",
+      "message": "Message",
+      "send": "Send",
+      "thanks": "Thanks — we'll be in touch shortly."
+    },
+    "Blog": {
+      "eyebrow": "Our Blog",
+      "title": "Latest News"
+    }
+  },
+  "Product": {
+    "addToCart": "Add to Cart",
+    "wishlist": "Add to Wishlist",
+    "quickView": "Quick View",
+    "viewFullDetails": "View full details",
+    "related": "You may also like"
+  },
+  "Collection": {
+    "allTitle": "All Collections",
+    "backHome": "Back to home",
+    "results": "{count} products",
+    "sortBy": "Sort by",
+    "sort": {
+      "featured": "Featured",
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low"
+    }
+  },
+  "Cart": {
+    "title": "Your Cart",
+    "pageTitle": "Shopping Cart",
+    "empty": "Your cart is empty.",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "calculatedAtCheckout": "Calculated at checkout",
+    "total": "Total",
+    "checkout": "Checkout",
+    "viewCart": "View Cart",
+    "continueShopping": "Continue Shopping",
+    "summary": "Order Summary",
+    "remove": "Remove",
+    "clearCart": "Clear cart"
+  },
+  "Wishlist": {
+    "pageTitle": "Wishlist",
+    "empty": "No items saved yet.",
+    "browse": "Browse Products"
+  },
+  "Search": {
+    "placeholder": "Search for products...",
+    "submit": "Search",
+    "noResults": "No products match your search.",
+    "resultsFor": "Results for \"{query}\"",
+    "count": "{count} products found"
+  },
+  "About": {
+    "title": "About An Nhiên",
+    "p1": "An Nhiên is a wholesale platform specializing in premium hair extensions and hairpieces for professional stylists and retailers worldwide.",
+    "p2": "Every strand we ship is 100% human Remy hair, cuticle-aligned, tangle-free, and ready for styling, coloring, or bleaching.",
+    "p3": "Our mission is to open doors to a world of fashion — one partnership at a time."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "intro": "We love hearing from stylists, shop owners, and customers. Reach us through any of the channels below."
+  },
+  "Faqs": {
+    "title": "Frequently Asked Questions",
+    "q1": { "q": "Is your hair 100% human?", "a": "Yes. All our products are 100% human Remy hair from a single donor." },
+    "q2": { "q": "Can I dye or bleach these extensions?", "a": "Yes — we recommend having a professional stylist handle color work." },
+    "q3": { "q": "Do you ship internationally?", "a": "Yes, we ship worldwide via DHL, FedEx, and EMS." },
+    "q4": { "q": "What is your return policy?", "a": "Unopened products may be returned within 14 days of delivery." }
+  },
+  "Blog": {
+    "title": "Our Blog"
+  }
+}

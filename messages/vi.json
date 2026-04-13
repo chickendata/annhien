@@ -1,0 +1,138 @@
+{
+  "Header": {
+    "menu": "Menu",
+    "search": "Tìm kiếm",
+    "cart": "Giỏ hàng",
+    "wishlist": "Yêu thích",
+    "nav": {
+      "home": "Trang chủ",
+      "bulk": "Tóc số lượng lớn",
+      "tape": "Tóc dán keo",
+      "wigs": "Tóc giả",
+      "weft": "Tóc dệt",
+      "closure": "Closure & Frontal",
+      "collections": "Bộ sưu tập",
+      "about": "Giới thiệu"
+    }
+  },
+  "Footer": {
+    "tagline": "Tóc nối và tóc giả bán buôn cho stylist và đại lý toàn cầu.",
+    "shop": "Mua sắm",
+    "help": "Hỗ trợ",
+    "newsletter": "Nhận tin",
+    "newsletterDesc": "Đăng ký để nhận sản phẩm mới và ưu đãi nội bộ.",
+    "emailPlaceholder": "Email của bạn",
+    "subscribe": "Đăng ký",
+    "rights": "Bảo lưu mọi quyền.",
+    "links": {
+      "bulk": "Tóc số lượng lớn",
+      "tape": "Tóc dán keo",
+      "wigs": "Tóc giả",
+      "weft": "Tóc dệt",
+      "all": "Tất cả bộ sưu tập",
+      "about": "Về chúng tôi",
+      "contact": "Liên hệ",
+      "faqs": "Câu hỏi thường gặp",
+      "blog": "Blog"
+    }
+  },
+  "Home": {
+    "Hero": {
+      "discover": "Khám phá thêm",
+      "slide1Title": "Mở cánh cửa đến thế giới thời trang",
+      "slide1Subtitle": "Mùa mới 2026",
+      "slide2Title": "Tóc số lượng lớn. Giá sỉ.",
+      "slide2Subtitle": "Lựa chọn của stylist",
+      "slide3Title": "Tóc giả định nghĩa phong cách",
+      "slide3Subtitle": "Bộ sưu tập Full Lace"
+    },
+    "Collections": {
+      "eyebrow": "Danh mục",
+      "title": "Mua theo bộ sưu tập"
+    },
+    "NewArrivals": {
+      "eyebrow": "Mới về",
+      "title": "Sản phẩm mới"
+    },
+    "Stylist": {
+      "eyebrow": "Dành cho chuyên gia",
+      "title": "Chào mừng Stylist!",
+      "description": "Tạo tài khoản để nhận ưu đãi, giá sỉ và quyền tiếp cận sớm sản phẩm mới.",
+      "name": "Họ tên",
+      "whatsapp": "WhatsApp",
+      "message": "Lời nhắn",
+      "send": "Gửi",
+      "thanks": "Cảm ơn — chúng tôi sẽ liên hệ sớm."
+    },
+    "Blog": {
+      "eyebrow": "Blog",
+      "title": "Tin mới nhất"
+    }
+  },
+  "Product": {
+    "addToCart": "Thêm vào giỏ",
+    "wishlist": "Thêm vào yêu thích",
+    "quickView": "Xem nhanh",
+    "viewFullDetails": "Xem chi tiết",
+    "related": "Có thể bạn thích"
+  },
+  "Collection": {
+    "allTitle": "Tất cả bộ sưu tập",
+    "backHome": "Về trang chủ",
+    "results": "{count} sản phẩm",
+    "sortBy": "Sắp xếp",
+    "sort": {
+      "featured": "Nổi bật",
+      "newest": "Mới nhất",
+      "priceAsc": "Giá: Thấp đến cao",
+      "priceDesc": "Giá: Cao đến thấp"
+    }
+  },
+  "Cart": {
+    "title": "Giỏ hàng",
+    "pageTitle": "Giỏ hàng",
+    "empty": "Giỏ hàng đang trống.",
+    "subtotal": "Tạm tính",
+    "shipping": "Vận chuyển",
+    "calculatedAtCheckout": "Tính khi thanh toán",
+    "total": "Tổng cộng",
+    "checkout": "Thanh toán",
+    "viewCart": "Xem giỏ hàng",
+    "continueShopping": "Tiếp tục mua",
+    "summary": "Tóm tắt đơn hàng",
+    "remove": "Xoá",
+    "clearCart": "Xoá giỏ hàng"
+  },
+  "Wishlist": {
+    "pageTitle": "Yêu thích",
+    "empty": "Chưa có sản phẩm nào.",
+    "browse": "Xem sản phẩm"
+  },
+  "Search": {
+    "placeholder": "Tìm sản phẩm...",
+    "submit": "Tìm",
+    "noResults": "Không có sản phẩm nào khớp.",
+    "resultsFor": "Kết quả cho \"{query}\"",
+    "count": "Tìm thấy {count} sản phẩm"
+  },
+  "About": {
+    "title": "Về An Nhiên",
+    "p1": "An Nhiên là nền tảng bán buôn chuyên tóc nối và tóc giả cao cấp dành cho stylist và đại lý toàn cầu.",
+    "p2": "Mỗi sợi tóc chúng tôi gửi đi đều là 100% tóc người Remy, biểu bì thẳng hàng, không rối, sẵn sàng tạo kiểu, nhuộm hoặc tẩy.",
+    "p3": "Sứ mệnh của chúng tôi là mở cánh cửa đến thế giới thời trang — qua từng mối hợp tác."
+  },
+  "Contact": {
+    "title": "Liên hệ",
+    "intro": "Chúng tôi luôn sẵn sàng lắng nghe stylist, chủ tiệm và khách hàng. Liên hệ qua các kênh dưới đây."
+  },
+  "Faqs": {
+    "title": "Câu hỏi thường gặp",
+    "q1": { "q": "Tóc có phải 100% tóc người không?", "a": "Có. Tất cả sản phẩm là 100% tóc người Remy từ một người cho duy nhất." },
+    "q2": { "q": "Có thể nhuộm hoặc tẩy được không?", "a": "Có — nên để stylist chuyên nghiệp thực hiện công đoạn màu." },
+    "q3": { "q": "Có giao hàng quốc tế không?", "a": "Có, giao toàn cầu qua DHL, FedEx và EMS." },
+    "q4": { "q": "Chính sách đổi trả như thế nào?", "a": "Sản phẩm chưa mở có thể trả trong vòng 14 ngày kể từ khi nhận." }
+  },
+  "Blog": {
+    "title": "Blog"
+  }
+}
