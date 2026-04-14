@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="mt-16 border-t border-[color:var(--border)] bg-[color:var(--surface)]">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Logo />
+          <Logo className="[&_img]:h-20" />
           <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
             {t("tagline")}
           </p>
