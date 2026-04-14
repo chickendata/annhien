@@ -123,9 +123,75 @@
   },
   "About": {
     "title": "Về An Nhiên",
-    "p1": "An Nhiên là nền tảng bán buôn chuyên tóc nối và tóc giả cao cấp dành cho stylist và đại lý toàn cầu.",
-    "p2": "Mỗi sợi tóc chúng tôi gửi đi đều là 100% tóc người Remy, biểu bì thẳng hàng, không rối, sẵn sàng tạo kiểu, nhuộm hoặc tẩy.",
-    "p3": "Sứ mệnh của chúng tôi là mở cánh cửa đến thế giới thời trang — qua từng mối hợp tác."
+    "hero": {
+      "eyebrow": "Về chúng tôi",
+      "tagline": "Sống trọn từng ngày và tự tin khoe vẻ đẹp thật của bạn",
+      "description": "An Nhiên mang đến tóc nối và tóc giả cao cấp, được tuyển chọn kỹ lưỡng để stylist và đại lý trên khắp thế giới có thể tin cậy."
+    },
+    "philosophy": {
+      "eyebrow": "Triết lý",
+      "title": "Chế tác để bền lâu",
+      "body": "Chúng tôi chọn từng lô tóc Remy nguyên bản, dệt máy tỉ mỉ và xử lý nhẹ tay để giữ trọn độ mượt, độ đàn hồi và tuổi thọ của từng sợi tóc. Một sản phẩm tốt không chỉ đẹp trong ngày đầu — mà còn giữ dáng sau nhiều lần nhuộm, tẩy và tạo kiểu."
+    },
+    "approach": {
+      "eyebrow": "Cách làm của chúng tôi",
+      "title": "Nguồn tóc sạch, quy trình minh bạch",
+      "body": "Từ xưởng sản xuất tại Bắc Ninh đến tay khách hàng, mỗi bó tóc đều được phân loại theo độ dài, kiểm tra biểu bì và khử kiềm đúng chuẩn. Chúng tôi tin rằng stylist xứng đáng được làm việc với nguyên liệu có thể kiểm chứng — không bất ngờ, không pha trộn."
+    },
+    "statement": {
+      "title": "Thương hiệu Việt, chất lượng toàn cầu",
+      "body": "An Nhiên tự hào là nhà cung cấp tóc từ Việt Nam, kết hợp bàn tay thợ lành nghề với tiêu chuẩn kiểm định quốc tế để phục vụ salon, stylist và đại lý ở hơn 20 quốc gia."
+    },
+    "values": {
+      "eyebrow": "Giá trị cốt lõi",
+      "title": "Vì sao stylist chọn An Nhiên",
+      "items": [
+        {
+          "title": "Mượt tự nhiên",
+          "body": "Biểu bì thẳng hàng, không rối, cảm giác chạm như tóc thật."
+        },
+        {
+          "title": "Bền màu, bền sợi",
+          "body": "Giữ form sau nhiều lần nhuộm, tẩy và tạo nhiệt nếu chăm sóc đúng cách."
+        },
+        {
+          "title": "Phù hợp mọi kiểu tóc",
+          "body": "Đa dạng từ bulk, weft, tape-in đến wig full lace cho mọi phong cách."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Đẹp hơn — và tự tin hơn",
+      "body": "Khám phá bộ sưu tập mới và chọn sản phẩm phù hợp với salon, thương hiệu hoặc tủ đồ cá nhân của bạn.",
+      "button": "Mua ngay"
+    },
+    "trust": {
+      "items": [
+        {
+          "title": "Giao hàng toàn cầu",
+          "body": "Vận chuyển nhanh trong 3-7 ngày làm việc."
+        },
+        {
+          "title": "Bảo đảm chất lượng",
+          "body": "Đổi trả trong 7 ngày nếu không đúng mô tả."
+        },
+        {
+          "title": "Hỗ trợ trực tuyến",
+          "body": "Tư vấn stylist 7 ngày/tuần qua Zalo và email."
+        },
+        {
+          "title": "Thanh toán linh hoạt",
+          "body": "Chuyển khoản, COD và các cổng quốc tế."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Sẵn sàng hợp tác?",
+      "body": "Gọi hoặc nhắn cho đội ngũ An Nhiên để nhận báo giá sỉ, mẫu thử và tư vấn bộ sưu tập phù hợp với thị trường của bạn.",
+      "phoneLabel": "Hotline",
+      "emailLabel": "Email",
+      "button": "Liên hệ ngay"
+    }
   },
   "Contact": {
     "title": "Liên hệ",

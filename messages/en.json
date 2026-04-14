@@ -123,9 +123,75 @@
   },
   "About": {
     "title": "About An Nhiên",
-    "p1": "An Nhiên is a wholesale platform specializing in premium hair extensions and hairpieces for professional stylists and retailers worldwide.",
-    "p2": "Every strand we ship is 100% human Remy hair, cuticle-aligned, tangle-free, and ready for styling, coloring, or bleaching.",
-    "p3": "Our mission is to open doors to a world of fashion — one partnership at a time."
+    "hero": {
+      "eyebrow": "About Us",
+      "tagline": "Live every day boldly and show off your true colors",
+      "description": "An Nhiên crafts premium hair extensions and wigs that stylists and retailers around the world can rely on — strand by strand, salon by salon."
+    },
+    "philosophy": {
+      "eyebrow": "Philosophy",
+      "title": "Made to last",
+      "body": "We hand-select Remy hair, machine-weft with care, and process gently so every bundle keeps its softness, bounce, and longevity. A great product shouldn't just look good on day one — it should hold up after repeated coloring, bleaching, and styling."
+    },
+    "approach": {
+      "eyebrow": "Our approach",
+      "title": "Clean sourcing, transparent process",
+      "body": "From our workshop in Bắc Ninh to your salon, every bundle is sorted by length, inspected for cuticle alignment, and neutralized to spec. Stylists deserve to work with materials they can verify — no surprises, no blends."
+    },
+    "statement": {
+      "title": "Vietnamese craft, global standard",
+      "body": "An Nhiên is proudly made in Vietnam, pairing skilled hands with international quality control to serve salons, stylists, and retailers in more than 20 countries."
+    },
+    "values": {
+      "eyebrow": "Core values",
+      "title": "Why stylists choose An Nhiên",
+      "items": [
+        {
+          "title": "Natural softness",
+          "body": "Cuticle-aligned, tangle-free, and indistinguishable from natural hair to the touch."
+        },
+        {
+          "title": "Built to hold",
+          "body": "Keeps its shape after repeated coloring, bleaching, and heat styling with proper care."
+        },
+        {
+          "title": "For every look",
+          "body": "Bulk, weft, tape-in, and full-lace wigs — we cover the full range of professional needs."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Look great — feel even better",
+      "body": "Explore the latest collection and pick the right pieces for your salon, brand, or personal styling kit.",
+      "button": "Shop now"
+    },
+    "trust": {
+      "items": [
+        {
+          "title": "Worldwide shipping",
+          "body": "Fast delivery in 3–7 business days."
+        },
+        {
+          "title": "Quality guarantee",
+          "body": "7-day returns if the product doesn't match the description."
+        },
+        {
+          "title": "Online support",
+          "body": "Stylist-to-stylist help via Zalo and email, 7 days a week."
+        },
+        {
+          "title": "Flexible payment",
+          "body": "Bank transfer, COD, and international gateways."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready to partner with us?",
+      "body": "Call or message the An Nhiên team to receive wholesale pricing, sample bundles, and collection advice tailored to your market.",
+      "phoneLabel": "Hotline",
+      "emailLabel": "Email",
+      "button": "Contact us"
+    }
   },
   "Contact": {
     "title": "Contact Us",
