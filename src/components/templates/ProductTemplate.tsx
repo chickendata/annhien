@@ -6,7 +6,6 @@ import type { Product } from "@/data/products";
 import ProductGallery from "@/components/organisms/ProductGallery";
 import ProductCard from "@/components/organisms/ProductCard";
 import Button from "@/components/atoms/Button";
-import Price from "@/components/atoms/Price";
 import Heading from "@/components/atoms/Heading";
 import Icon from "@/components/atoms/Icon";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
@@ -41,7 +40,6 @@ export default function ProductTemplate({
         <ProductGallery images={product.images} alt={product.name[locale]} />
         <div className="flex flex-col gap-5">
           <Heading level={1} className="text-3xl">{product.name[locale]}</Heading>
-          <Price amount={product.price} compareAt={product.compareAtPrice} className="text-2xl" />
           <p className="leading-relaxed text-[color:var(--muted)]">{product.description[locale]}</p>
 
           <div className="mt-4 flex items-center gap-3">

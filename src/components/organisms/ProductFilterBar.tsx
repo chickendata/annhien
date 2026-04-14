@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-export type SortOption = "featured" | "price-asc" | "price-desc" | "newest";
+export type SortOption = "featured" | "newest";
 
 export default function ProductFilterBar({
   sort,
@@ -27,8 +27,6 @@ export default function ProductFilterBar({
         >
           <option value="featured">{t("sort.featured")}</option>
           <option value="newest">{t("sort.newest")}</option>
-          <option value="price-asc">{t("sort.priceAsc")}</option>
-          <option value="price-desc">{t("sort.priceDesc")}</option>
         </select>
       </label>
     </div>

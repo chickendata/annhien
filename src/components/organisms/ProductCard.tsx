@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { Product } from "@/data/products";
-import Price from "@/components/atoms/Price";
 import ProductCardActions from "@/components/molecules/ProductCardActions";
 
 export default function ProductCard({
@@ -33,8 +32,7 @@ export default function ProductCard({
             {product.name[locale]}
           </h3>
         </Link>
-        <div className="mt-auto flex items-center justify-between pt-2">
-          <Price amount={product.price} compareAt={product.compareAtPrice} className="text-sm" />
+        <div className="mt-auto flex items-center justify-end pt-2">
           <ProductCardActions slug={product.slug} />
         </div>
       </div>

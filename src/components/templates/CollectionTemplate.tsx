@@ -21,8 +21,6 @@ export default function CollectionTemplate({
   const sorted = useMemo(() => {
     const copy = [...products];
     switch (sort) {
-      case "price-asc": return copy.sort((a, b) => a.price - b.price);
-      case "price-desc": return copy.sort((a, b) => b.price - a.price);
       case "newest": return copy.sort((a, b) => Number(!!b.isNew) - Number(!!a.isNew));
       default: return copy;
     }

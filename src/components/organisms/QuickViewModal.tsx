@@ -6,7 +6,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
-import Price from "@/components/atoms/Price";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
 import { useUI } from "@/store/ui";
 import { useCart } from "@/store/cart";
@@ -58,7 +57,6 @@ export default function QuickViewModal() {
         </div>
         <div className="flex flex-col gap-4 p-6">
           <h2 className="text-2xl font-semibold">{product.name[locale]}</h2>
-          <Price amount={product.price} compareAt={product.compareAtPrice} className="text-xl" />
           <p className="text-sm leading-relaxed text-[color:var(--muted)]">{product.description[locale]}</p>
           <div className="mt-2 flex items-center gap-3">
             <QuantityStepper value={qty} onChange={setQty} />

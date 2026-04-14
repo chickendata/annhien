@@ -6,12 +6,10 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
-import Price from "@/components/atoms/Price";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
 import { useCart } from "@/store/cart";
 import { useUI } from "@/store/ui";
 import { getProduct } from "@/data/products";
-import { formatPrice } from "@/lib/assets";
 
 export default function CartDrawer() {
   const open = useUI((s) => s.cartOpen);
@@ -28,11 +26,6 @@ export default function CartDrawer() {
       };
     }
   }, [open]);
-
-  const total = items.reduce((sum, i) => {
-    const p = getProduct(i.slug);
-    return sum + (p?.price ?? 0) * i.quantity;
-  }, 0);
 
   if (!open) return null;
 
@@ -64,7 +57,6 @@ export default function CartDrawer() {
                       <Link href={`/products/${product.slug}`} onClick={close} className="text-sm font-medium hover:text-[color:var(--brand)] line-clamp-2">
                         {product.name[locale]}
                       </Link>
-                      <Price amount={product.price} className="mt-1 text-sm" />
                       <div className="mt-auto flex items-center justify-between">
                         <QuantityStepper value={item.quantity} onChange={(q) => updateQty(item.slug, q)} />
                         <Button variant="icon" size="sm" onClick={() => remove(item.slug)} aria-label={t("remove")}>
@@ -81,10 +73,6 @@ export default function CartDrawer() {
 
         {items.length > 0 && (
           <footer className="border-t border-[color:var(--border)] px-4 py-4">
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-sm uppercase tracking-wide">{t("subtotal")}</span>
-              <span className="text-lg font-semibold">{formatPrice(total)}</span>
-            </div>
             <Link href="/cart" onClick={close} className="block">
               <Button size="lg" className="w-full">{t("viewCart")}</Button>
             </Link>

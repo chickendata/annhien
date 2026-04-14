@@ -9,7 +9,6 @@ import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
 import { useUI } from "@/store/ui";
 import { searchProducts } from "@/data/products";
-import { formatPrice } from "@/lib/assets";
 
 export default function SearchOverlay() {
   const open = useUI((s) => s.searchOpen);
@@ -66,7 +65,6 @@ export default function SearchOverlay() {
                       </div>
                       <div className="flex-1">
                         <p className="text-sm font-medium">{p.name[locale]}</p>
-                        <p className="text-xs text-[color:var(--muted)]">{formatPrice(p.price)}</p>
                       </div>
                     </Link>
                   </li>

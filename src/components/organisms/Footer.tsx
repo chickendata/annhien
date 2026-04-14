@@ -46,6 +46,35 @@ export default function Footer() {
           </form>
         </div>
       </div>
+      <div className="border-t border-[color:var(--border)]">
+        <div className="mx-auto max-w-7xl px-4 py-8">
+          <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest">{t("contact")}</h4>
+          <div className="grid gap-6 text-sm sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <p className="mb-1 font-medium">{t("factory")}</p>
+              <p className="text-[color:var(--muted)]">Bình An, Đông Thọ, Yên Phong, Bắc Ninh</p>
+            </div>
+            <div>
+              <p className="mb-1 font-medium">{t("officeHN")}</p>
+              <p className="text-[color:var(--muted)]">P3110, Tầng 31, Toà B, Chung cư Samsora, Vạn Phúc, Hà Đông, Hà Nội</p>
+            </div>
+            <div>
+              <p className="mb-1 font-medium">{t("officeHCM")}</p>
+              <p className="text-[color:var(--muted)]">55 Đình Tân Khai, P. Bình Tân, TP. HCM</p>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-col gap-2 text-sm sm:flex-row sm:gap-8">
+            <p>
+              <span className="font-medium">{t("phone")}: </span>
+              <a href="tel:0855276131" className="hover:text-[color:var(--brand)]">0855.276.131</a>
+            </p>
+            <p>
+              <span className="font-medium">{t("email")}: </span>
+              <a href="mailto:wigsbyannhien26@gmail.com" className="hover:text-[color:var(--brand)]">wigsbyannhien26@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="border-t border-[color:var(--border)] py-4 text-center text-xs text-[color:var(--muted)]">
         © {new Date().getFullYear()} An Nhiên. {t("rights")}
       </div>
