@@ -24,7 +24,7 @@ export default async function AboutTemplate() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center">
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src={img(10001)}
+              src="/About/10001.webp"
               alt={t("philosophy.title")}
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
@@ -46,9 +46,9 @@ export default async function AboutTemplate() {
       <section className="border-t border-[color:var(--border)]">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center">
           <div className="md:order-2">
-            <div className="relative aspect-[4/5] overflow-hidden">
+            <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--surface)]">
               <Image
-                src={img(10028)}
+                src="/About/10002.webp"
                 alt={t("approach.title")}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -70,11 +70,11 @@ export default async function AboutTemplate() {
 
       <section className="relative overflow-hidden bg-black">
         <Image
-          src={img(10015)}
+          src="/About/10004.webp"
           alt={t("statement.title")}
           fill
           sizes="100vw"
-          className="object-cover opacity-40"
+          className="object-cover opacity-50"
         />
         <div className="relative z-10 mx-auto max-w-3xl px-4 py-24 text-center text-white">
           <Heading level={2} className="mb-5 text-3xl md:text-5xl">
