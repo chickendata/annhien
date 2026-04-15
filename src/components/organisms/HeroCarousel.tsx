@@ -45,7 +45,7 @@ export default function HeroCarousel() {
                 src={slide.image}
                 alt={t(slide.titleKey)}
                 fill
-                priority={i === 0}
+                priority
                 sizes="100vw"
                 className="object-cover opacity-70"
               />
