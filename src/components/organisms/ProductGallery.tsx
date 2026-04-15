@@ -20,7 +20,8 @@ export default function ProductGallery({
           alt={alt}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
-          priority
+          loading="eager"
+          fetchPriority="high"
           className="object-cover"
         />
       </div>
