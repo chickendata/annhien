@@ -3,26 +3,39 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Product } from "@/data/products";
+import type { Collection } from "@/data/collections";
 import ProductGallery from "@/components/organisms/ProductGallery";
 import ProductCard from "@/components/organisms/ProductCard";
 import Button from "@/components/atoms/Button";
 import Heading from "@/components/atoms/Heading";
 import Icon from "@/components/atoms/Icon";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
+import Breadcrumb, { type BreadcrumbItem } from "@/components/molecules/Breadcrumb";
 import { useCart } from "@/store/cart";
 import { useUI } from "@/store/ui";
 import { useWishlist } from "@/store/wishlist";
 
 export default function ProductTemplate({
   product,
+  collection,
   related,
   locale,
 }: {
   product: Product;
+  collection: Collection | null;
   related: Product[];
   locale: "vi" | "en";
 }) {
   const t = useTranslations("Product");
+  const tNav = useTranslations("Header.nav");
+
+  const crumbs: BreadcrumbItem[] = [
+    { label: tNav("home"), href: "/" },
+    ...(collection
+      ? [{ label: collection.name[locale], href: `/collections/${collection.slug}` }]
+      : []),
+    { label: product.name[locale] },
+  ];
   const [qty, setQty] = useState(1);
   const addToCart = useCart((s) => s.add);
   const openCart = useUI((s) => s.openCart);
@@ -39,6 +52,7 @@ export default function ProductTemplate({
       <div className="grid gap-10 md:grid-cols-2">
         <ProductGallery images={product.images} alt={product.name[locale]} />
         <div className="flex flex-col gap-5">
+          <Breadcrumb items={crumbs} />
           <Heading level={1} className="text-3xl">{product.name[locale]}</Heading>
           <p className="leading-relaxed text-[color:var(--muted)]">{product.description[locale]}</p>
 
