@@ -7,8 +7,9 @@ import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
 import Badge from "@/components/atoms/Badge";
 import NavItem from "@/components/molecules/NavItem";
+import NavDropdown from "@/components/molecules/NavDropdown";
 import LangToggle from "@/components/molecules/LangToggle";
-import MobileNav from "@/components/organisms/MobileNav";
+import MobileNav, { type MobileNavItem } from "@/components/organisms/MobileNav";
 import { useCart, selectCartCount } from "@/store/cart";
 import { useWishlist } from "@/store/wishlist";
 import { useUI } from "@/store/ui";
@@ -21,7 +22,7 @@ export default function Header() {
   const openSearch = useUI((s) => s.openSearch);
   const openMobileNav = useUI((s) => s.openMobileNav);
 
-  const navItems = [
+  const navItems: MobileNavItem[] = [
     { href: "/", label: t("nav.home") },
     { href: "/collections/bulk-hair", label: t("nav.bulk") },
     { href: "/collections/tape-hair", label: t("nav.tape") },
@@ -29,7 +30,15 @@ export default function Header() {
     { href: "/collections/weft-hair", label: t("nav.weft") },
     { href: "/collections/closure-frontal", label: t("nav.closure") },
     { href: "/collections", label: t("nav.collections") },
-    { href: "/about", label: t("nav.about") },
+    {
+      href: "/about",
+      label: t("nav.about"),
+      children: [
+        { href: "/blog", label: t("nav.blog") },
+        { href: "/contact", label: t("nav.contact") },
+        { href: "/faqs", label: t("nav.faqs") },
+      ],
+    },
   ];
 
   return (
@@ -43,9 +52,18 @@ export default function Header() {
         </div>
 
         <nav className="hidden items-center gap-5 lg:flex">
-          {navItems.map((item) => (
-            <NavItem key={item.href} href={item.href} label={item.label} />
-          ))}
+          {navItems.map((item) =>
+            item.children ? (
+              <NavDropdown
+                key={item.href}
+                href={item.href}
+                label={item.label}
+                items={item.children}
+              />
+            ) : (
+              <NavItem key={item.href} href={item.href} label={item.label} />
+            ),
+          )}
         </nav>
 
         <div className="flex items-center gap-1">

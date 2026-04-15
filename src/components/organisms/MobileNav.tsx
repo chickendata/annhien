@@ -7,11 +7,13 @@ import Icon from "@/components/atoms/Icon";
 import NavItem from "@/components/molecules/NavItem";
 import { useUI } from "@/store/ui";
 
-export default function MobileNav({
-  navItems,
-}: {
-  navItems: Array<{ href: string; label: string }>;
-}) {
+export type MobileNavItem = {
+  href: string;
+  label: string;
+  children?: { href: string; label: string }[];
+};
+
+export default function MobileNav({ navItems }: { navItems: MobileNavItem[] }) {
   const open = useUI((s) => s.mobileNavOpen);
   const close = useUI((s) => s.closeMobileNav);
   const t = useTranslations("Header");
@@ -39,7 +41,21 @@ export default function MobileNav({
         </div>
         <nav className="flex flex-col gap-1 p-4" onClick={close}>
           {navItems.map((item) => (
-            <NavItem key={item.href} href={item.href} label={item.label} className="block py-2" />
+            <div key={item.href} className="flex flex-col">
+              <NavItem href={item.href} label={item.label} className="block py-2" />
+              {item.children && (
+                <div className="ml-4 flex flex-col border-l border-[color:var(--border)] pl-3">
+                  {item.children.map((child) => (
+                    <NavItem
+                      key={child.href}
+                      href={child.href}
+                      label={child.label}
+                      className="block py-1.5 text-xs"
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
       </aside>
