@@ -73,6 +73,12 @@
       "send": "Gửi",
       "thanks": "Cảm ơn — chúng tôi sẽ liên hệ sớm."
     },
+    "Gallery": {
+      "eyebrow": "Bộ sưu tập",
+      "title": "Mẫu tóc nổi bật",
+      "description": "Khám phá các kiểu tóc được stylist yêu thích — từ tự nhiên thanh lịch đến phá cách cá tính.",
+      "view": "Xem"
+    },
     "Blog": {
       "eyebrow": "Blog",
       "title": "Tin mới nhất"

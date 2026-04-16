@@ -73,6 +73,12 @@
       "send": "Send",
       "thanks": "Thanks — we'll be in touch shortly."
     },
+    "Gallery": {
+      "eyebrow": "Lookbook",
+      "title": "Featured Hair Styles",
+      "description": "Explore the styles stylists love — from natural elegance to bold statements.",
+      "view": "View"
+    },
     "Blog": {
       "eyebrow": "Our Blog",
       "title": "Latest News"
