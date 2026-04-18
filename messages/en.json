@@ -82,6 +82,42 @@
     "Blog": {
       "eyebrow": "Our Blog",
       "title": "Latest News"
+    },
+    "Testimonials": {
+      "eyebrow": "What clients say",
+      "title": "Trusted by stylists and clients",
+      "items": [
+        {
+          "name": "Linh Tran",
+          "role": "Stylist, Hanoi",
+          "body": "Silky strands, aligned cuticles, and the bleach test held shape after 3 months. Salon clients keep asking — this is my only supplier now."
+        },
+        {
+          "name": "Emily Carter",
+          "role": "Salon Owner, Los Angeles",
+          "body": "We've tested dozens of vendors over the past 5 years. An Nhiên's wefts are the first batch our colorists didn't send back — consistent density, zero shedding."
+        },
+        {
+          "name": "Minh Pham",
+          "role": "Shop Owner, Da Nang",
+          "body": "Delivery on time, packed carefully, every bundle has its own QC tag. Their Zalo support is fast and actually knows the product."
+        },
+        {
+          "name": "Sofia Nguyen",
+          "role": "Creative Director, Sydney",
+          "body": "Full lace wigs blend seamlessly on camera. My photo shoots finally stopped needing retouching around the hairline."
+        },
+        {
+          "name": "Hoai Anh",
+          "role": "Freelance Stylist, HCMC",
+          "body": "Ordered tape-ins on Tuesday, received on Friday. Adhesive holds well, no residue — my client went 6 weeks before a touch-up."
+        },
+        {
+          "name": "Priya Desai",
+          "role": "Boutique Buyer, London",
+          "body": "The cuticle alignment is noticeably better than the Indian temple hair we were sourcing. Our customers have started asking for 'the Vietnamese bundles' by name."
+        }
+      ]
     }
   },
   "Product": {

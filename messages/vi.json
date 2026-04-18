@@ -82,6 +82,42 @@
     "Blog": {
       "eyebrow": "Blog",
       "title": "Tin mới nhất"
+    },
+    "Testimonials": {
+      "eyebrow": "Khách hàng nói gì",
+      "title": "Niềm tin từ stylist và khách hàng",
+      "items": [
+        {
+          "name": "Linh Trần",
+          "role": "Stylist, Hà Nội",
+          "body": "Sợi tóc cực mượt, biểu bì đều, nhuộm bleach vẫn giữ dáng sau 3 tháng. Khách salon khen liên tục — đây sẽ là nguồn duy nhất của mình."
+        },
+        {
+          "name": "Emily Carter",
+          "role": "Salon Owner, Los Angeles",
+          "body": "We've tested dozens of vendors over the past 5 years. An Nhiên's wefts are the first batch our colorists didn't send back — consistent density, zero shedding."
+        },
+        {
+          "name": "Minh Phạm",
+          "role": "Chủ tiệm, Đà Nẵng",
+          "body": "Giao hàng đúng hẹn, đóng gói kỹ, mỗi bó đều có tem kiểm định riêng. Đội ngũ tư vấn trên Zalo trả lời rất nhanh, đúng chuyên môn."
+        },
+        {
+          "name": "Sofia Nguyen",
+          "role": "Creative Director, Sydney",
+          "body": "Full lace wigs blend seamlessly on camera. My photo shoots finally stopped needing retouching around the hairline."
+        },
+        {
+          "name": "Hoài Anh",
+          "role": "Stylist freelance, TP.HCM",
+          "body": "Tape-in đặt hôm thứ 3, nhận thứ 6. Keo bám tốt, không để lại vệt — khách 6 tuần vẫn chưa cần bảo dưỡng."
+        },
+        {
+          "name": "Priya Desai",
+          "role": "Boutique Buyer, London",
+          "body": "The cuticle alignment is noticeably better than the Indian temple hair we were sourcing. Our customers have started asking for 'the Vietnamese bundles' by name."
+        }
+      ]
     }
   },
   "Product": {
