@@ -54,7 +54,7 @@ export const products: Product[] = [
     collectionSlug: "bulk-hair",
     price: 179,
     compareAtPrice: 229,
-    images: [img(10015), img(10017)],
+    images: [img(10011), img(10012)],
     description: {
       en: "The #1 pick of professional salons worldwide.",
       vi: "Lựa chọn số 1 của các salon chuyên nghiệp trên thế giới.",
@@ -66,7 +66,7 @@ export const products: Product[] = [
     name: { en: "Wholesale Bulk Hair Extensions", vi: "Tóc nối bán buôn" },
     collectionSlug: "bulk-hair",
     price: 259,
-    images: [img(10019), img(10021)],
+    images: [img(10013), img(10021)],
     description: {
       en: "Hot selling at wholesale price. Minimum order 5 packs.",
       vi: "Bán chạy với giá bán buôn. Đặt tối thiểu 5 gói.",

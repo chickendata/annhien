@@ -207,13 +207,15 @@ export default function HairStyleGallery() {
 
           <div
             key={lightbox}
-            className="lightbox-image flex h-[90vh] items-center justify-center"
+            className="lightbox-image relative h-[90vh] w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
+            <Image
               src={ALL_IMAGES[lightbox].src}
               alt={ALL_IMAGES[lightbox].alt}
-              className="h-full w-auto object-contain"
+              fill
+              sizes="100vw"
+              className="object-contain"
             />
             <div className="absolute bottom-[3vh] left-1/2 -translate-x-1/2 text-xs tracking-widest text-white/60">
               {lightbox + 1} / {ALL_IMAGES.length}

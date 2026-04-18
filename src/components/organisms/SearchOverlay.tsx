@@ -16,11 +16,16 @@ export default function SearchOverlay() {
   const t = useTranslations("Search");
   const locale = useLocale() as "vi" | "en";
   const [query, setQuery] = useState("");
+  const [prevOpen, setPrevOpen] = useState(open);
+
+  if (open !== prevOpen) {
+    setPrevOpen(open);
+    if (open) setQuery("");
+  }
 
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
-      setQuery("");
       return () => {
         document.body.style.overflow = "";
       };

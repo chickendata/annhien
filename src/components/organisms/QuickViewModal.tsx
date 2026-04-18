@@ -19,9 +19,14 @@ export default function QuickViewModal() {
   const t = useTranslations("Product");
   const locale = useLocale() as "vi" | "en";
   const [qty, setQty] = useState(1);
+  const [prevSlug, setPrevSlug] = useState(slug);
+
+  if (slug !== prevSlug) {
+    setPrevSlug(slug);
+    setQty(1);
+  }
 
   useEffect(() => {
-    setQty(1);
     if (slug) {
       document.body.style.overflow = "hidden";
       return () => {
