@@ -22,10 +22,6 @@
     "tagline": "Tóc nối và tóc giả bán buôn cho stylist và đại lý toàn cầu.",
     "shop": "Mua sắm",
     "help": "Hỗ trợ",
-    "newsletter": "Nhận tin",
-    "newsletterDesc": "Đăng ký để nhận sản phẩm mới và ưu đãi nội bộ.",
-    "emailPlaceholder": "Email của bạn",
-    "subscribe": "Đăng ký",
     "rights": "Bảo lưu mọi quyền.",
     "contact": "Liên hệ",
     "factory": "Xưởng sản xuất",
@@ -68,9 +64,11 @@
       "title": "Chào mừng Stylist!",
       "description": "Tạo tài khoản để nhận ưu đãi, giá sỉ và quyền tiếp cận sớm sản phẩm mới.",
       "name": "Họ tên",
-      "whatsapp": "WhatsApp",
+      "email": "Email",
       "message": "Lời nhắn",
       "send": "Gửi",
+      "sending": "Đang gửi…",
+      "error": "Không gửi được. Vui lòng thử lại hoặc liên hệ qua email.",
       "thanks": "Cảm ơn — chúng tôi sẽ liên hệ sớm."
     },
     "Gallery": {

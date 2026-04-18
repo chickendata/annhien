@@ -22,10 +22,6 @@
     "tagline": "Wholesale hair extensions and hairpieces for stylists and retailers worldwide.",
     "shop": "Shop",
     "help": "Help",
-    "newsletter": "Newsletter",
-    "newsletterDesc": "Subscribe for new arrivals and insider deals.",
-    "emailPlaceholder": "Your email",
-    "subscribe": "Subscribe",
     "rights": "All rights reserved.",
     "contact": "Contact",
     "factory": "Factory",
@@ -68,9 +64,11 @@
       "title": "Welcome Stylists!",
       "description": "Create an account to receive preferred benefits, wholesale pricing, and early access to new arrivals.",
       "name": "Name",
-      "whatsapp": "WhatsApp",
+      "email": "Email",
       "message": "Message",
       "send": "Send",
+      "sending": "Sending…",
+      "error": "Could not send. Please try again or email us directly.",
       "thanks": "Thanks — we'll be in touch shortly."
     },
     "Gallery": {

@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Logo from "@/components/atoms/Logo";
-import Input from "@/components/atoms/Input";
-import Button from "@/components/atoms/Button";
 import SocialIcons from "@/components/molecules/SocialIcons";
 
 export default function Footer() {
@@ -10,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-16 border-t border-[color:var(--border)] bg-[color:var(--surface)]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <Logo className="[&_img]:h-20" />
           <p className="mt-4 text-sm leading-relaxed text-[color:var(--muted)]">
@@ -36,14 +34,6 @@ export default function Footer() {
             <li><Link href="/faqs" className="hover:text-[color:var(--brand)]">{t("links.faqs")}</Link></li>
             <li><Link href="/blog" className="hover:text-[color:var(--brand)]">{t("links.blog")}</Link></li>
           </ul>
-        </div>
-        <div>
-          <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest">{t("newsletter")}</h4>
-          <p className="mb-3 text-sm text-[color:var(--muted)]">{t("newsletterDesc")}</p>
-          <form className="flex gap-2">
-            <Input type="email" placeholder={t("emailPlaceholder")} required />
-            <Button type="submit" size="md">{t("subscribe")}</Button>
-          </form>
         </div>
       </div>
       <div className="border-t border-[color:var(--border)]">
