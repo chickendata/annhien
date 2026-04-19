@@ -1,5 +1,3 @@
-import { img } from "@/lib/assets";
-
 export type HeroSlide = {
   image: string;
   titleKey: string;
@@ -10,23 +8,16 @@ export type HeroSlide = {
 
 export const heroSlides: HeroSlide[] = [
   {
-    image: img(10015),
+    image: "/HLC_Hair_Store/banner_hero.png",
     titleKey: "slide1Title",
     subtitleKey: "slide1Subtitle",
     ctaKey: "discover",
     href: "/collections",
   },
   {
-    image: img(10017),
+    image: "/HLC_Hair_Store/banner_hero2.png",
     titleKey: "slide2Title",
     subtitleKey: "slide2Subtitle",
-    ctaKey: "discover",
-    href: "/collections/bulk-hair",
-  },
-  {
-    image: img(10019),
-    titleKey: "slide3Title",
-    subtitleKey: "slide3Subtitle",
     ctaKey: "discover",
     href: "/collections/wigs-hair",
   },
