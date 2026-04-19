@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
+import ProductImage from "@/components/atoms/ProductImage";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
 import { useUI } from "@/store/ui";
 import { useCart } from "@/store/cart";
@@ -58,7 +58,7 @@ export default function QuickViewModal() {
           <Icon name="close" size={18} />
         </button>
         <div className="relative aspect-square bg-[color:var(--surface)]">
-          <Image src={product.images[0]} alt={product.name[locale]} fill sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+          <ProductImage src={product.images[0]} alt={product.name[locale]} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" watermarkSize="md" />
         </div>
         <div className="flex flex-col gap-4 p-6">
           <h2 className="text-2xl font-semibold">{product.name[locale]}</h2>

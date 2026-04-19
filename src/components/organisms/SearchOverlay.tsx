@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
+import ProductImage from "@/components/atoms/ProductImage";
 import { useUI } from "@/store/ui";
 import { searchProducts } from "@/data/products";
 
@@ -66,7 +66,7 @@ export default function SearchOverlay() {
                       className="flex items-center gap-3 p-2 hover:bg-[color:var(--surface)]"
                     >
                       <div className="relative h-14 w-14 flex-shrink-0 overflow-hidden bg-[color:var(--surface)]">
-                        <Image src={p.images[0]} alt={p.name[locale]} fill sizes="56px" className="object-cover" />
+                        <ProductImage src={p.images[0]} alt={p.name[locale]} sizes="56px" className="object-cover" watermarkSize="sm" />
                       </div>
                       <div className="flex-1">
                         <p className="text-sm font-medium">{p.name[locale]}</p>

@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/Icon";
+import ProductImage from "@/components/atoms/ProductImage";
 import QuantityStepper from "@/components/molecules/QuantityStepper";
 import { useCart } from "@/store/cart";
 import { useUI } from "@/store/ui";
@@ -51,7 +51,7 @@ export default function CartDrawer() {
                 return (
                   <li key={item.slug} className="flex gap-3">
                     <Link href={`/products/${product.slug}`} onClick={close} className="relative h-20 w-20 flex-shrink-0 overflow-hidden bg-[color:var(--surface)]">
-                      <Image src={product.images[0]} alt={product.name[locale]} fill sizes="80px" className="object-cover" />
+                      <ProductImage src={product.images[0]} alt={product.name[locale]} sizes="80px" className="object-cover" watermarkSize="sm" />
                     </Link>
                     <div className="flex flex-1 flex-col">
                       <Link href={`/products/${product.slug}`} onClick={close} className="text-sm font-medium hover:text-[color:var(--brand)] line-clamp-2">

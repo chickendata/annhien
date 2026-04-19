@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import ProductImage from "@/components/atoms/ProductImage";
 
 export default function ProductGallery({
   images,
@@ -15,14 +16,14 @@ export default function ProductGallery({
   return (
     <div className="flex flex-col gap-3">
       <div className="relative aspect-square overflow-hidden bg-[color:var(--surface)]">
-        <Image
+        <ProductImage
           src={images[active]}
           alt={alt}
-          fill
           sizes="(min-width: 768px) 50vw, 100vw"
           loading="eager"
           fetchPriority="high"
           className="object-cover"
+          watermarkSize="lg"
         />
       </div>
       {images.length > 1 && (
