@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Heading from "@/components/atoms/Heading";
 import Text from "@/components/atoms/Text";
 import Icon from "@/components/atoms/Icon";
+import ProductImage from "@/components/atoms/ProductImage";
 
 const ALL_IMAGES = Array.from({ length: 16 }, (_, i) => ({
   src: `/Mautoc/mau_toc_${i + 1}.jpg`,
@@ -53,12 +53,12 @@ function FilmstripRow({
             className="filmstrip-card group relative flex-shrink-0 cursor-pointer overflow-hidden rounded-lg"
           >
             <div className="relative h-[280px] w-[210px] overflow-hidden sm:h-[340px] sm:w-[255px] md:h-[400px] md:w-[300px]">
-              <Image
+              <ProductImage
                 src={img.src}
                 alt={img.alt}
-                fill
                 sizes="300px"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                watermarkSize="md"
               />
               {/* Cinematic bars */}
               <div className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-black/30 to-transparent" />
@@ -210,12 +210,12 @@ export default function HairStyleGallery() {
             className="lightbox-image relative h-[90vh] w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
+            <ProductImage
               src={ALL_IMAGES[lightbox].src}
               alt={ALL_IMAGES[lightbox].alt}
-              fill
               sizes="100vw"
               className="object-contain"
+              watermarkSize="lg"
             />
             <div className="absolute bottom-[3vh] left-1/2 -translate-x-1/2 text-xs tracking-widest text-white/60">
               {lightbox + 1} / {ALL_IMAGES.length}
