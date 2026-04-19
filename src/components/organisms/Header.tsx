@@ -24,11 +24,28 @@ export default function Header() {
 
   const navItems: MobileNavItem[] = [
     { href: "/", label: t("nav.home") },
-    { href: "/collections/bulk-hair", label: t("nav.bulk") },
-    { href: "/collections/tape-hair", label: t("nav.tape") },
-    { href: "/collections/wigs-hair", label: t("nav.wigs") },
-    { href: "/collections/weft-hair", label: t("nav.weft") },
-    { href: "/collections/closure-frontal", label: t("nav.closure") },
+    {
+      href: "/collections",
+      label: t("nav.shopByType"),
+      children: [
+        { href: "/collections/bulk-hair", label: t("nav.bulk") },
+        { href: "/collections/weft-hair", label: t("nav.weft") },
+        { href: "/collections/tape-hair", label: t("nav.tape") },
+        { href: "/collections/clip-in-hair", label: t("nav.clipIn") },
+        { href: "/collections/keratin-hair", label: t("nav.keratin") },
+        { href: "/collections/ponytail-hair", label: t("nav.ponytail") },
+        { href: "/collections/feather-hair", label: t("nav.feather") },
+        { href: "/collections/virgin-hair", label: t("nav.virgin") },
+      ],
+    },
+    {
+      href: "/collections/wigs-hair",
+      label: t("nav.wigs"),
+      children: [
+        { href: "/collections/wave-curly", label: t("nav.waveCurly") },
+        { href: "/collections/closure-frontal", label: t("nav.closure") },
+      ],
+    },
     { href: "/collections", label: t("nav.collections") },
     {
       href: "/about",
@@ -49,22 +66,21 @@ export default function Header() {
             <Icon name="menu" size={20} />
           </Button>
           <Logo />
+          <nav className="hidden items-center gap-5 lg:flex">
+            {navItems.map((item) =>
+              item.children ? (
+                <NavDropdown
+                  key={item.label}
+                  href={item.href}
+                  label={item.label}
+                  items={item.children}
+                />
+              ) : (
+                <NavItem key={item.label} href={item.href} label={item.label} />
+              ),
+            )}
+          </nav>
         </div>
-
-        <nav className="hidden items-center gap-5 lg:flex">
-          {navItems.map((item) =>
-            item.children ? (
-              <NavDropdown
-                key={item.href}
-                href={item.href}
-                label={item.label}
-                items={item.children}
-              />
-            ) : (
-              <NavItem key={item.href} href={item.href} label={item.label} />
-            ),
-          )}
-        </nav>
 
         <div className="flex items-center gap-1">
           <Button variant="icon" onClick={openSearch} aria-label={t("search")}>
