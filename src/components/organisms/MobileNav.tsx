@@ -41,13 +41,13 @@ export default function MobileNav({ navItems }: { navItems: MobileNavItem[] }) {
         </div>
         <nav className="flex flex-col gap-1 p-4" onClick={close}>
           {navItems.map((item) => (
-            <div key={item.href} className="flex flex-col">
+            <div key={item.label} className="flex flex-col">
               <NavItem href={item.href} label={item.label} className="block py-2" />
               {item.children && (
                 <div className="ml-4 flex flex-col border-l border-[color:var(--border)] pl-3">
                   {item.children.map((child) => (
                     <NavItem
-                      key={child.href}
+                      key={child.label}
                       href={child.href}
                       label={child.label}
                       className="block py-1.5 text-xs"
