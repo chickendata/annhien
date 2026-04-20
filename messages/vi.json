@@ -130,12 +130,26 @@
     "wishlist": "Thêm vào yêu thích",
     "quickView": "Xem nhanh",
     "viewFullDetails": "Xem chi tiết",
-    "related": "Có thể bạn thích"
+    "related": "Có thể bạn thích",
+    "viewing": "{count} người đang xem sản phẩm này.",
+    "estimateLabel": "Dự kiến giao hàng",
+    "askQuestion": "Đặt câu hỏi",
+    "askTitle": "Gửi câu hỏi",
+    "askName": "Họ tên",
+    "askEmail": "Email",
+    "askMessage": "Nội dung",
+    "askSubmit": "Gửi",
+    "askSending": "Đang gửi…",
+    "askThanks": "Cảm ơn bạn — chúng tôi sẽ phản hồi qua email sớm.",
+    "askError": "Không gửi được. Vui lòng thử lại hoặc email trực tiếp."
   },
   "Collection": {
     "allTitle": "Tất cả bộ sưu tập",
     "backHome": "Về trang chủ",
     "results": "{count} sản phẩm",
+    "menuTitle": "Sản phẩm",
+    "allOption": "Tất cả",
+    "empty": "Chưa có sản phẩm.",
     "sortBy": "Sắp xếp",
     "sort": {
       "featured": "Nổi bật",

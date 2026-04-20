@@ -16,7 +16,8 @@ type IconName =
   | "eye"
   | "plus"
   | "minus"
-  | "trash";
+  | "trash"
+  | "truck";
 
 type Props = SVGProps<SVGSVGElement> & { name: IconName; size?: number };
 
@@ -136,6 +137,14 @@ export default function Icon({ name, size = 20, ...rest }: Props) {
       return (
         <svg {...common}>
           <path d="M3 6h18M8 6V4h8v2M6 6l1 14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-14" />
+        </svg>
+      );
+    case "truck":
+      return (
+        <svg {...common}>
+          <path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z" />
+          <circle cx="7.5" cy="18" r="1.75" />
+          <circle cx="17" cy="18" r="1.75" />
         </svg>
       );
   }

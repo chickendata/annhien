@@ -130,12 +130,26 @@
     "wishlist": "Add to Wishlist",
     "quickView": "Quick View",
     "viewFullDetails": "View full details",
-    "related": "You may also like"
+    "related": "You may also like",
+    "viewing": "{count} people are viewing this right now.",
+    "estimateLabel": "Estimated delivery",
+    "askQuestion": "Ask a question",
+    "askTitle": "Ask a question",
+    "askName": "Name",
+    "askEmail": "Email",
+    "askMessage": "Your message",
+    "askSubmit": "Submit",
+    "askSending": "Sending…",
+    "askThanks": "Thanks — we'll reply to your email soon.",
+    "askError": "Could not send. Please try again or email us directly."
   },
   "Collection": {
     "allTitle": "All Collections",
     "backHome": "Back to home",
     "results": "{count} products",
+    "menuTitle": "Products",
+    "allOption": "All",
+    "empty": "No products yet.",
     "sortBy": "Sort by",
     "sort": {
       "featured": "Featured",

@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Product } from "@/data/products";
 import type { Collection } from "@/data/collections";
 import ProductGallery from "@/components/organisms/ProductGallery";
 import ProductCard from "@/components/organisms/ProductCard";
+import AskQuestionModal from "@/components/organisms/AskQuestionModal";
 import Button from "@/components/atoms/Button";
 import Heading from "@/components/atoms/Heading";
 import Icon from "@/components/atoms/Icon";
@@ -14,6 +15,19 @@ import Breadcrumb, { type BreadcrumbItem } from "@/components/molecules/Breadcru
 import { useCart } from "@/store/cart";
 import { useUI } from "@/store/ui";
 import { useWishlist } from "@/store/wishlist";
+
+function formatDeliveryRange(locale: "vi" | "en"): string {
+  const now = new Date();
+  const from = new Date(now);
+  from.setDate(now.getDate() + 3);
+  const to = new Date(now);
+  to.setDate(now.getDate() + 5);
+  const fmt = new Intl.DateTimeFormat(locale === "vi" ? "vi-VN" : "en-US", {
+    month: "short",
+    day: "numeric",
+  });
+  return `${fmt.format(from)} – ${fmt.format(to)}`;
+}
 
 export default function ProductTemplate({
   product,
@@ -37,10 +51,21 @@ export default function ProductTemplate({
     { label: product.name[locale] },
   ];
   const [qty, setQty] = useState(1);
+  const [viewers, setViewers] = useState<number | null>(null);
+  const [delivery, setDelivery] = useState<string | null>(null);
+  const [askOpen, setAskOpen] = useState(false);
   const addToCart = useCart((s) => s.add);
   const openCart = useUI((s) => s.openCart);
   const wishlist = useWishlist();
   const isWish = wishlist.ids.includes(product.slug);
+
+  useEffect(() => {
+    const randomViewers = () => Math.floor(Math.random() * 41) + 10;
+    setViewers(randomViewers());
+    setDelivery(formatDeliveryRange(locale));
+    const interval = setInterval(() => setViewers(randomViewers()), 10000);
+    return () => clearInterval(interval);
+  }, [locale, product.slug]);
 
   const onAdd = () => {
     addToCart(product.slug, qty);
@@ -69,6 +94,30 @@ export default function ProductTemplate({
               <Icon name={isWish ? "heart-filled" : "heart"} size={18} />
             </Button>
           </div>
+
+          <div className="mt-2 flex flex-col gap-3 border-y border-[color:var(--border)] py-4 text-sm">
+            <div className="flex items-center gap-2 text-[color:var(--muted)]">
+              <span
+                aria-hidden
+                className="inline-block h-2 w-2 animate-pulse rounded-full bg-[color:var(--brand)]"
+              />
+              <span>{viewers !== null ? t("viewing", { count: viewers }) : "\u00A0"}</span>
+            </div>
+            <div className="flex items-center gap-2 text-[color:var(--muted)]">
+              <Icon name="truck" size={16} />
+              <span>
+                <span className="font-medium text-[color:var(--foreground)]">{t("estimateLabel")}:</span>{" "}
+                {delivery ?? "\u00A0"}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setAskOpen(true)}
+              className="inline-flex items-center gap-2 self-start text-left text-sm underline hover:text-[color:var(--brand)]"
+            >
+              {t("askQuestion")}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -82,6 +131,12 @@ export default function ProductTemplate({
           </div>
         </section>
       )}
+
+      <AskQuestionModal
+        open={askOpen}
+        onClose={() => setAskOpen(false)}
+        productName={product.name[locale]}
+      />
     </div>
   );
 }
